@@ -45,14 +45,14 @@
             <div class="home-inner">
               <div class="container">
                 <div class="row ">
-                  <div class="col-md-8 ">
-                    <h1 class="display-4">Lorem ipsum <strong>dolor sit amet</strong>, consectetur adipisicing elit. Accusamus, <strong>nemo</strong>.</h1>
+                  <div class="col-md-8 d-none d-md-block">
+                    <h1 class="display-5">Lorem ipsum <strong>dolor sit amet</strong>, consecteus, <strong>nemo</strong>.</h1>
                     <div class="d-flex flex-row">
                       <div class="p-4 align-self-start">
                         <i class="fa fa-check"></i>
                       </div>
                       <div class="p-4 align-self-end">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores itaque ipsa iste odio aperiam qui unde natus velit cumque cupiditate?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores itaque ipsa iste odio aperiam 
                       </div>
                     </div>
                     <div class="d-flex flex-row">
@@ -60,7 +60,7 @@
                         <i class="fa fa-check"></i>
                       </div>
                       <div class="p-4 align-self-end">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores itaque ipsa iste odio aperiam qui unde natus velit cumque cupiditate?
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores itaque ipsa iste odio aperiam 
                       </div>
                     </div>  
                     <div class="d-flex flex-row">
@@ -253,7 +253,53 @@
             </div>
           </div>
         </section>
+        
+        <footer id="main-footer" class="bg-inverse">
+          <div class="container">
+            <div class="row">
+              <div class="col text-center">
+                <div class="py-4">
+                  <h1 class="h3">
+                    Website
+                  </h1>
+                  <p>Copyright &copy; 2017</p>
+                  <button class="btn btn-primary" data-toggle="modal" data-target="#ContactModel"> Contactanos</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       
+        <div class="modal fade" id="ContactModel">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="contactModalLabel">Contacto</h5>
+                <button class="close" data-dismiss="modal"><span>&times;</span></button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id=name>
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Correo</label>
+                    <input type="email" class="form-control" id=email>
+                  </div>
+                  <div class="form-group">
+                    <label for="name">Mensaje</label>
+                    <textarea type="text" class="form-control" id=message></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary btn-block">Enviar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        
         
         <script src="js/jquery.min.js"></script>
         <script src="js/popper.min.js"></script>
